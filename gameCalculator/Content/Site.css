@@ -36,3 +36,19 @@ input[type="select"] {
         padding: 0;
     }
 }
+
+.alert_wrapper {
+    display: inline-block;
+    float: right;
+    margin: 12.5px 15px 5px 0;
+    height: 10px;
+}
+.alert {
+    padding: 5px;
+}
+.aler-danger {
+    float: right;
+}
+.clear {
+    clear: both;
+}
