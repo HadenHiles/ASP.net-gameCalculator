@@ -46,13 +46,20 @@ input[type="select"] {
 .alert {
     padding: 5px;
 }
-.aler-danger {
-    float: right;
-}
 .clear {
     clear: both;
 }
 .bold {
     color:#000;
     font-weight: bold !important;
+}
+.results_list {
+    width: 200px;
+    text-align: left;
+}
+.results_list .bold {
+    float: right;
+}
+.btn-primary {
+    margin: 10px 0;
 }

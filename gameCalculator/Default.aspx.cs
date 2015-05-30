@@ -14,6 +14,7 @@ namespace gameCalculator
 
         }
 
+        //A click event is triggered and summary calculations are done
         protected void btnCalculate_Click(object sender, EventArgs e)
         {
             //Retrieve all of the result list values
@@ -54,8 +55,8 @@ namespace gameCalculator
             totalPointsAllowed = allowed1 + allowed2 + allowed3 + allowed4;
             pointDifferential = totalPointsScored - totalPointsAllowed;
             totalSpectators = spectators1 + spectators2 + spectators3 + spectators4;
-            winningPercentage = (gamesWon / 4) * 100;
-            averageSpectators = totalSpectators / 4;
+            winningPercentage = (Convert.ToDecimal(gamesWon) / 4);
+            averageSpectators = Convert.ToDecimal(totalSpectators) / 4; 
 
             //Output the summary results
             lblGamesWon.Text = gamesWon.ToString();
@@ -64,7 +65,7 @@ namespace gameCalculator
             lblTotalPointsAllowed.Text = totalPointsAllowed.ToString();
             lblPointDifferential.Text = pointDifferential.ToString();
             lblTotalSpectators.Text = totalSpectators.ToString();
-            lblWinningPercentage.Text = winningPercentage.ToString();
+            lblWinningPercentage.Text = winningPercentage.ToString("p"); //Format to a percentage string
             lblAverageSpectators.Text = averageSpectators.ToString();
         }
     }

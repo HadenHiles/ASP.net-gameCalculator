@@ -435,37 +435,37 @@
                     </asp:CompareValidator>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4" style="text-align: center;">
-                <div class="row" id="summaryResults" runat="server">
-                    <div class="well">
+            <div class="col-md-8 col-sm-8">
+                <div class="well">
                         <h1>Summary</h1>
-                        <div>
-                            Games One: <asp:Label ID="lblGamesWon" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Games Lost: <asp:Label ID="lblGamesLost" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Winning %: <asp:Label ID="lblWinningPercentage" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Total Points Scored: <asp:Label ID="lblTotalPointsScored" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Total Points Allowed: <asp:Label ID="lblTotalPointsAllowed" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Point Differential: <asp:Label ID="lblPointDifferential" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Total Spectators: <asp:Label ID="lblTotalSpectators" CssClass="bold" runat="server"></asp:Label>
-                        </div>
-                        <div>
-                            Average Spectators: <asp:Label ID="lblAverageSpectators" CssClass="bold" runat="server"></asp:Label>
+                        <div class="results_list">
+                            <div>
+                                Games One: <asp:Label ID="lblGamesWon" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Games Lost: <asp:Label ID="lblGamesLost" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Winning %: <asp:Label ID="lblWinningPercentage" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Total Points Scored: <asp:Label ID="lblTotalPointsScored" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Total Points Allowed: <asp:Label ID="lblTotalPointsAllowed" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Point Differential: <asp:Label ID="lblPointDifferential" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Total Spectators: <asp:Label ID="lblTotalSpectators" CssClass="bold" runat="server"></asp:Label>
+                            </div>
+                            <div>
+                                Average Spectators: <asp:Label ID="lblAverageSpectators" CssClass="bold" runat="server"></asp:Label>
+                            </div>
                         </div>
                         <asp:Button ID="btnCalculate" CssClass="btn btn-primary" runat="server" Text="Calculate Summary" OnClick="btnCalculate_Click" />
                     </div>
-                </div>
             </div>
         </div>
     </div>
