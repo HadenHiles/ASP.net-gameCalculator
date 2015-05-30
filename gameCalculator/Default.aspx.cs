@@ -36,6 +36,36 @@ namespace gameCalculator
             int spectators2 = Convert.ToInt16(txtSpectators2.Text);
             int spectators3 = Convert.ToInt16(txtSpectators3.Text);
             int spectators4 = Convert.ToInt16(txtSpectators4.Text);
+
+            //Set up some variables for the summary
+            int gamesWon,
+                gamesLost,
+                totalPointsScored,
+                totalPointsAllowed,
+                pointDifferential,
+                totalSpectators;
+            decimal winningPercentage,
+                    averageSpectators;
+
+            //Do the Calculations
+            gamesWon = result1 + result2 + result3 + result4;
+            gamesLost = 4 - gamesWon;
+            totalPointsScored = scored1 + scored2 + scored3 + scored4;
+            totalPointsAllowed = allowed1 + allowed2 + allowed3 + allowed4;
+            pointDifferential = totalPointsScored - totalPointsAllowed;
+            totalSpectators = spectators1 + spectators2 + spectators3 + spectators4;
+            winningPercentage = (gamesWon / 4) * 100;
+            averageSpectators = totalSpectators / 4;
+
+            //Output the summary results
+            lblGamesWon.Text = gamesWon.ToString();
+            lblGamesLost.Text = gamesLost.ToString();
+            lblTotalPointsScored.Text = totalPointsScored.ToString();
+            lblTotalPointsAllowed.Text = totalPointsAllowed.ToString();
+            lblPointDifferential.Text = pointDifferential.ToString();
+            lblTotalSpectators.Text = totalSpectators.ToString();
+            lblWinningPercentage.Text = winningPercentage.ToString();
+            lblAverageSpectators.Text = averageSpectators.ToString();
         }
     }
 }
