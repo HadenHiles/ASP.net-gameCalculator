@@ -55,7 +55,7 @@ namespace gameCalculator
             totalPointsAllowed = allowed1 + allowed2 + allowed3 + allowed4;
             pointDifferential = totalPointsScored - totalPointsAllowed;
             totalSpectators = spectators1 + spectators2 + spectators3 + spectators4;
-            winningPercentage = (Convert.ToDecimal(gamesWon) / 4);
+            winningPercentage = Convert.ToDecimal(gamesWon) / 4;
             averageSpectators = Convert.ToDecimal(totalSpectators) / 4; 
 
             //Output the summary results
