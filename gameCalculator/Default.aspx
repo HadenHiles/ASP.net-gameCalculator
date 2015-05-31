@@ -97,7 +97,7 @@
                                                         ControlToValidate="txtSpectators1" 
                                                         Display="Dynamic"
                                                         cssClass="alert alert-danger"
-                                                        ErrorMessage="Enter the Spectators!"
+                                                        ErrorMessage="Enter the number of Spectators!"
                                                         runat="server">
                             </asp:RequiredFieldValidator>
                         </div>
@@ -204,7 +204,7 @@
                                                         ControlToValidate="txtSpectators2" 
                                                         Display="Dynamic"
                                                         cssClass="alert alert-danger"
-                                                        ErrorMessage="Enter the Spectators!"
+                                                        ErrorMessage="Enter the number of Spectators!"
                                                         runat="server">
                             </asp:RequiredFieldValidator>
                         </div>
@@ -311,7 +311,7 @@
                                                         ControlToValidate="txtSpectators3" 
                                                         Display="Dynamic"
                                                         cssClass="alert alert-danger"
-                                                        ErrorMessage="Enter the Spectators!"
+                                                        ErrorMessage="Enter the number of Spectators!"
                                                         runat="server">
                             </asp:RequiredFieldValidator>
                         </div>
@@ -418,7 +418,7 @@
                                                         ControlToValidate="txtSpectators4" 
                                                         Display="Dynamic"
                                                         cssClass="alert alert-danger"
-                                                        ErrorMessage="Enter the Spectators!"
+                                                        ErrorMessage="Enter the number of Spectators!"
                                                         runat="server">
                             </asp:RequiredFieldValidator>
                         </div>
